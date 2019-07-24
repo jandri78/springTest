@@ -1,0 +1,62 @@
+1. CREATE
+
+Use a POST method for creating a Person
+localhost:8080/persons/
+    {
+        "name": "Cristian",
+        "lastName": "Rincon",
+        "age": 22,
+        "address": "Fontibronx"
+    }
+
+Create Multiple Persons
+
+localhost:8080/persons/
+
+[
+    {
+        "name": "Cristian",
+        "lastName": "Rincon",
+        "age": 22,
+        "address": "Fontibronx"
+    },
+    {
+        "name": "David",
+        "lastName": "Cadena",
+        "age": 28,
+        "address": "Calle 26 Cerca GE"
+    }
+]
+
+2. READ
+
+Use a GET method for obtain the information of the persons
+
+localhost:8080/persons/
+
+for individual person
+
+localhost:8080/persons/{PersonId to get}
+
+
+3. UPDATE
+
+Use a PUT method for update
+
+localhost:8080/persons/{PersonId to Update}
+
+
+    {
+        "name": "David",
+        "lastName": "Guerrero",
+        "age": 32,
+        "address": "Calle 26 Cerca GE"
+    }
+    
+    
+4. DELETE
+
+Use a DELETE method for delete a Person
+
+localhost:8080/persons/{PersonId to delete}
+
